@@ -1,11 +1,12 @@
 let count = 0;
 function increaseCount(){
     count++;
-    displayCount();
     checkCountValue();
+    displayCount();
+    
 }
 function displayCount(){
-    document.getElementById('count').innerText=count;
+    document.getElementById('Count').innerText=count;
 }
 
 
@@ -16,3 +17,9 @@ function checkCountValue(){
         alert("your instagram post has gained 20 followers keep it up!");
     }
 }
+function resetCount() {
+    count = 0;
+    alert("Followers count has been reset");
+    displayCount(); 
+}
+displayCount();
